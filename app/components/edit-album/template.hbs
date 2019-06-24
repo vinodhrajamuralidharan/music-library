@@ -1,0 +1,48 @@
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="name" class="col-md-2 control-label">Artist Name</label>
+    <div class="col-md-5">
+      {{input value=model.artistName class="form-control"}}
+    </div>
+  </div>
+	<div class="form-group">
+    <label for="name" class="col-md-2 control-label">Album Name</label>
+    <div class="col-md-5">
+      {{input value=model.albumName class="form-control"}}
+    </div>
+  </div>
+	<div class="form-group">
+    <label for="name" class="col-md-2 control-label">Genre</label>
+    <div class="col-md-5">
+      {{input value=model.genre class="form-control"}}
+    </div>
+  </div>
+	<div class="form-group">
+    <label for="name" class="col-md-2 control-label">Album Cover</label>
+    <div class="col-md-5">
+      {{input value=model.albumCover class="form-control"}}
+    </div>
+  </div>
+	<div class="form-group">
+    <label for="name" class="col-md-2 control-label">Year of Release</label>
+    <div class="col-md-5">
+      {{input value=model.yearOfRelease class="form-control"}}
+    </div>
+  </div>
+	<div class="form-group">
+    <label for="name" class="col-md-2 control-label">Spotify Link</label>
+    <div class="col-md-5">
+      {{input value=model.spotifyLink class="form-control"}}
+    </div>
+  </div>
+  <div class="form-group">
+   <div class="col-sm-offset-2 col-sm-10">
+     {{#if enableButton}}
+      <button {{action "editAlbum"}} class="btn btn-sm btn-primary">Save</button>
+     {{else}}
+      <button {{action "editAlbum"}} class="btn btn-sm btn-primary disabled">Save</button>
+     {{/if}}
+     {{#link-to 'musics' class="btn btn-sm btn-primary"}} Back {{/link-to}}
+   </div>
+ </div>
+</form>

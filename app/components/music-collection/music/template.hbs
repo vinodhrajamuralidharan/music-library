@@ -1,0 +1,18 @@
+<div class="col-lg-2 col-md-6 mb-4 music">
+	<div class="card h-100">
+		<div class="card-body">
+			<h4 class="card-title">{{music.albumName}}</h4>
+			<p class="card-text">{{music.artistName}}</p>
+		</div>
+		<div class="card-footer">
+
+			{{#link-to 'view' music.id class="btn btn-info" role="button"}}
+				Find Out More!
+			{{/link-to}}
+
+			{{#link-to 'edit' music.id class="btn btn-info" role="button"}}
+				Edit
+			{{/link-to}}
+		</div>
+	</div>
+</div>
