@@ -1,8 +1,8 @@
 {
-  "name": "music-library",
+  "name": "services-pocs",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for music-library goes here",
+  "description": "Small description for services-pocs goes here",
   "repository": "",
   "license": "MIT",
   "author": "",
@@ -20,6 +20,7 @@
   "devDependencies": {
     "@ember/jquery": "^0.5.2",
     "@ember/optional-features": "^0.6.3",
+    "@fortawesome/ember-fontawesome": "^0.1.13",
     "bootstrap": "^3.4.1",
     "broccoli-asset-rev": "^2.7.0",
     "ember-ajax": "^3.1.0",

@@ -2,10 +2,20 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'music-library',
+    modulePrefix: 'services-pocs',
     environment,
     rootURL: '/',
     locationType: 'auto',
+    fontawesome: {
+      icons: {
+        'free-solid-svg-icons': 'all',
+        'pro-light-svg-icons': [
+          'adjust',
+          'ambulance',
+          'pencil-alt'
+        ]
+      }
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

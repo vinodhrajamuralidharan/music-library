@@ -1,4 +1,4 @@
-import musicRoute from './routes/music';
+// import currentHolding from './routes/current-holding';
 
 export default function() {
 
@@ -13,5 +13,5 @@ export default function() {
     router.call(methods);
   };
 
-	this.use('/musics', musicRoute);
+	// this.use('/current-holding', currentHolding);
 }

@@ -1,0 +1,17 @@
+<div class="container">
+	 <div class="row">
+		  <div class="text-center col-xs-8 col-xs-offset-2 msg-box">
+			 	 <span>Your cover currently includes</span>
+			 	 <h2>{{currentHolding.packageName}}</h2>
+			 	 <strong> £{{currentHolding.price.monthly}} a month</strong>
+
+				 {{product-list products=currentHolding.products}}
+
+				 {{#if currentHolding.asv}}
+				 		<h5>
+							Annual Boiler Service Included
+						</h5>
+				 {{/if}}
+			 </div>
+	 </div>
+</div>
